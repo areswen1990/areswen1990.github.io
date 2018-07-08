@@ -1,5 +1,5 @@
 body {
-    font-family:'Work Sans';
+    font-family:'AvenirNext';
     font-weight:normal;
     font-style:normal;
     font-stretch:normal;
@@ -29,6 +29,158 @@ a:active {
 }
 .desktop {
     display:none;
+}
+
+.container {
+}
+
+.nav {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-logo {
+    margin: 0 auto 0 0;
+}
+
+.nav-title {
+    width: 51px;
+    height: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-menu-icon {
+    margin: 6px 5.86% 0 auto
+}
+
+.nav-menu {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg {
+    width: 100%;
+}
+
+.intro {
+    position: absolute;
+    top: 15%;
+    margin: 0 0 0 5.33%;
+}
+
+.intro-title {
+    height: 66px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 auto 0 0;
+}
+
+.intro-content {
+    margin: 18px auto 0 0;
+    width: 355px;
+    height: 72px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #ffffff;
+}
+
+.line {
+    width: 89px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 44px auto 0 0;
+}
+
+.download {
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 5.33% 0 auto;
+}
+
+.download-txt {
+    height: 19px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 0 8px;
+}
+
+.items {
+    margin:-27px 0 0 0;
+}
+
+.item {
+    width: 100%;
+    height: 232px;
+}
+
+.item:nth-child(1),
+.item:nth-child(3) {
+    color: #ffffff;
+}
+
+.item-img {
+    padding: 30px 0 0 7.46%;
+}
+
+.item-title {
+    padding: 24px 0 0 7.46%;
+    font-family: WorkSans;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.item-content {
+    padding: 12px 0 0 7.46%;
+    width: 320px;
+    height: 72px;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.item:nth-child(odd){
+    background-color: #275ff8;
+}
+
+.footer {
+    width: 100%;
+    height: 169px;
+    background-color: #1c1f2b;
+    color: #fff;
+}
+
+.footer-copyright {
+    font-family: WorkSans;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.footer-logo {
+    padding: 30px 0 0 7.46%;
+}
+
+.footer-social {
+    display: flex;
+    padding: 22px 0 0 7.46%;
+}
+
+.footer-copyright {
+    padding: 9px 0 0 7.46%;
 }
 
 @media only screen and (min-width:961px){
