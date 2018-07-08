@@ -1,0 +1,42 @@
+body {
+    font-family:'Work Sans';
+    font-weight:normal;
+    font-style:normal;
+    font-stretch:normal;
+    line-height:normal;
+    letter-spacing:normal;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color:#000;
+}
+
+.mobile {
+    display:inline;
+}
+.desktop {
+    display:none;
+}
+
+@media only screen and (min-width:961px){
+    .mobile {
+        display:none;
+    }
+
+    .desktop {
+        display:inline;
+    }
+}
