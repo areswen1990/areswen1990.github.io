@@ -1,5 +1,5 @@
 body {
-    font-family:'AvenirNext';
+    font-family: 'Avenir Next';
     font-weight:normal;
     font-style:normal;
     font-stretch:normal;
@@ -25,13 +25,10 @@ a:active {
 }
 
 .mobile {
-    display:inline;
+    display: block;
 }
 .desktop {
-    display:none;
-}
-
-.container {
+    display: none;
 }
 
 .nav {
@@ -60,7 +57,27 @@ a:active {
 }
 
 .nav-menu {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
     display: none;
+    width: 180px;
+    height: 218px;
+    background-color: #275ff8;
+}
+
+.menu-item {
+    margin: 20px 0 0 20px;
+    display: flex;
+    align-items: center;
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-item > span{
+    margin:0 0 0 8px;
 }
 
 .header {
@@ -71,6 +88,11 @@ a:active {
 
 .bg {
     width: 100%;
+}
+
+.bg img {
+    width: 100%;
+    display: block;
 }
 
 .intro {
@@ -120,7 +142,7 @@ a:active {
 }
 
 .items {
-    margin:-27px 0 0 0;
+    margin:-22px 0 0 0;
 }
 
 .item {
@@ -139,7 +161,6 @@ a:active {
 
 .item-title {
     padding: 24px 0 0 7.46%;
-    font-family: WorkSans;
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -165,7 +186,6 @@ a:active {
 }
 
 .footer-copyright {
-    font-family: WorkSans;
     font-size: 10px;
     color: #ffffff;
 }
@@ -193,6 +213,156 @@ a:active {
     }
 
     .desktop {
-        display:inline;
+        display: block;
+    }
+
+    html, body
+    {
+        height: 100%;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .nav {
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .nav-logo {
+        margin: 50px 0 0 7.15%;
+    }
+
+    .nav-menu {
+        display: flex;
+        z-index: 0;
+        position: static;
+        top: auto;
+        right: auto;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        margin: 85px 7.15% 0 auto;
+    }
+
+    .menu-item {
+        height: 25px;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 80px 0 0;
+        color: #1a1a1a;
+    }
+
+    .menu-item > span{
+        margin:0 0 0 10px;
+    }
+
+    .works{
+        color: #999999;
+    }
+
+    .blogs,
+    .contact,
+    .lang{
+        color: #fff;
+    }
+
+    .header {
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .bg {
+        order: 2;
+    }
+
+    .bg img {
+        width: auto;
+        height: 100%;
+        margin: 0 0 0 auto;
+    }
+
+    .intro {
+        position: static;
+        margin: 292px 0 0 7.15%;
+        order: 1;
+    }
+
+    .intro-title {
+        width: 589px;
+        height: 137px;
+        font-size: 100px;
+        font-weight: bold;
+        color: #1a1a1a;
+        margin: 0px;
+    }
+
+    .intro-content {
+        width: 620px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333333;
+    }
+
+    .items {
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 13.96%;
+        width: 100%;
+        opacity: 0.9;
+        height: 275px;
+    }
+
+    .item:nth-child(2) {
+        color: #ffffff;
+        background-color: #275ff8;
+    }
+
+    .item {
+        height: 275px;
+        padding-left: 7.15%;
+    }
+
+    .item-img {
+        padding: 0;
+        margin: 44px 0 0 0px;
+    }
+
+    .item-title {
+        padding: 0;
+        margin: 33px 0 0 0px;
+        width: 213px;
+    }
+
+    .item-content {
+        padding: 0;
+        margin: 12px 0 0 0px;
+    }
+
+    .footer {
+        height: auto;
+        background-color: transparent;
+        position: absolute;
+        bottom: 3.26%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-social {
+        margin: 0 0 0 7.15%;
+        padding: 0;
+    }
+
+    .footer-copyright {
+        height: 16px;
+        font-size: 14px;
+        color: #ffffff;
+        margin: 0 7.15% 0 0;
     }
 }
