@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SupermeZebra</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/font.css?{{ site.assetversion }}">
+    <link rel="stylesheet" href="/assets/css/style.css?{{ site.assetversion }}">
+    {% include works_style.html %}
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-logo">
+                <picture>
+                    <source srcset="/assets/img/d-logo.png, /assets/img/d-logo@2x.png 2x" media="(min-width: 960px)">
+                    <img src="/assets/img/logo.png" srcset="/assets/img/logo@2x.png 2x">
+                </picture>
+            </div>
+            <div class="nav-title mobile"><span>WORKS</span><img src="/assets/img/icon-more.png" srcset="/assets/img/icon-more@2x.png 2x" width="12px" height="8px"></div>
+            <div class="nav-menu-icon mobile"><img src="/assets/img/icon-menu-black.png" srcset="/assets/img/icon-menu-black@2x.png 2x"></div>
+            <div class="nav-menu">
+                <a href="/"><div class="menu-item index" {% if page.route == 'index' %} style="margin-left:10px"{% endif %}>{% if page.route == 'index' %}
+                    <picture>
+                        <source srcset="/assets/img/rectangle-34.png, /assets/img/rectangle-34@2x.png 2x" media="(min-width: 960px)">
+                        <img src="/assets/img/icon-dian.png" srcset="/assets/img/icon-dian@2x.png 2x">
+                    </picture>
+                    {% endif %}<span>HOME</span></div></a>
+                <a href="/works"><div class="menu-item works" {% if page.route == 'works' %} style="margin-left:10px"{% endif %}>{% if page.route == 'works' %}
+                    <picture>
+                        <source srcset="/assets/img/rectangle-34.png, /assets/img/rectangle-34@2x.png 2x" media="(min-width: 960px)">
+                        <img src="/assets/img/icon-dian.png" srcset="/assets/img/icon-dian@2x.png 2x">
+                    </picture>
+                    {% endif %}<span>WORKS</span></div></a>
+                <a href="/blogs"><div class="menu-item blogs"><span>BLOGS</span></div></a>
+                <a href="/contact"><div class="menu-item contact"><span>CONTACT</span></div></a>
+                <a href="/"><div class="menu-item lang"><span>CHINESE</span></div></a>
+            </div>
+            <div class="categorys">
+                <div class="category"><img src="/assets/img/rectangle-34.png" srcset="/assets/img/rectangle-34@2x.png 2x" class="desktop"><span>All</span></div>
+                <div class="category">Branding</div>
+                <div class="category">Web</div>
+                <div class="category">App</div>
+                <div class="category">Illustration</div>
+            </div>
+        </div>
+        <div class="work-items">
+            <div class="work-item">
+                <a href="/work">
+                    <picture>
+                        <source srcset="/assets/img/bg-chic.png, /assets/img/bg-chic@2x.png 2x" media="(min-width: 960px)">
+                        <img src="/assets/img/banner-2.png" srcset="/assets/img/banner-2@2x.png 2x">
+                    </picture>
+                    <div class="work-item-content desktop">
+                        <img src="/assets/img/logo-c-1.png" srcset="/assets/img/logo-c-1@2x.png 2x" width="104px" height="110px;">
+                        <span>CHIC MOMENT BRANDING INDENTITY DESIGN</span>
+                        <span>VIEW MORE</span>
+                    </div>
+                </a>
+            </div>
+            <div class="work-item">
+                <a href="/work">
+                    <picture>
+                        <source srcset="/assets/img/bg-chic-1.png, /assets/img/bg-chic-1@2x.png 2x" media="(min-width: 960px)">
+                        <img src="/assets/img/banner-3.png" srcset="/assets/img/banner-3@2x.png 2x">
+                    </picture>
+                    <div class="work-item-content desktop">
+                        <img src="/assets/img/logo-c-2.png" srcset="/assets/img/logo-c-2@2x.png 2x" width="104px" height="110px;">
+                        <span>THE RICE OF MASTER BRADNING INDENTITY</span>
+                        <span>VIEW MORE</span>
+                    </div>
+                </a>
+            </div>
+            <div class="work-item">
+                <a href="/work">
+                    <picture>
+                        <source srcset="/assets/img/bg-chic.png, /assets/img/bg-chic@2x.png 2x" media="(min-width: 960px)">
+                        <img src="/assets/img/banner-2.png" srcset="/assets/img/banner-2@2x.png 2x">
+                    </picture>
+                    <div class="work-item-content desktop">
+                        <img src="/assets/img/logo-z-2.png" srcset="/assets/img/logo-z-2@2x.png 2x" width="104px" height="110px;">
+                        <span>CHIC MOMENT BRANDING INDENTITY DESIGN</span>
+                        <span>VIEW MORE</span>
+                    </div>
+                </a>
+            </div>
+            <div class="work-item">
+                <a href="/work">
+                    <picture>
+                        <source srcset="/assets/img/bg-chic-1.png, /assets/img/bg-chic-1@2x.png 2x" media="(min-width: 960px)">
+                        <img src="/assets/img/banner-3.png" srcset="/assets/img/banner-3@2x.png 2x">
+                    </picture>
+                    <div class="work-item-content desktop">
+                        <img src="/assets/img/logo-z-2.png" srcset="/assets/img/logo-z-2@2x.png 2x" width="104px" height="110px;">
+                        <span>THE RICE OF MASTER BRADNING INDENTITY</span>
+                        <span>VIEW MORE</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="pagination desktop">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>...</span>
+            <span>PREVIOUS</span>
+            <span>NEXT</span>
+        </div>
+        {% include footer.html %}
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $(".nav-menu-icon").click(function(){
+            $(".nav-menu").show();
+            $(".nav-title").hide();
+        })
+        $(".nav-title").click(function(){
+            $(".categorys").toggle();
+        })
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<style>
+    .nav {
+        z-index: auto;
+        position: static;
+    }
+    .nav-title {
+        margin: 0 6px 0 0;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color: #232631;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-title img {
+        margin: 0 0 0 6px;
+    }
+
+    .work-item img{
+        display: block;
+        width: 100%;
+    }
+
+    .categorys {
+        display: none;
+        position: absolute;
+        top: 56px;
+        height: 291px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 100%;
+    }
+
+    .category {
+        height: 58px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999;
+        font-size: 16px;
+    }
+
+    .category:nth-child(1) {
+        background-color: rgb(230, 230, 230, 0.14);
+        color: #1a1a1a;
+    }
+
+    .footer-copyright {
+        color: #000;
+    }
+
+    @media only screen and (min-width:961px){
+        .nav {
+            z-index: 1;
+            position: absolute;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            display: block;
+        }
+
+        .nav-menu span {
+            color: #999;
+        }
+
+        .works span {
+            color: #000;
+        }
+
+        .categorys {
+            display: flex;
+            position: absolute;
+            top: auto;
+            width: auto;
+            height: auto;
+            background-color: transparent;
+            box-shadow: none;
+            margin: 140px 0 0 46.66%;
+        }
+
+        .category {
+            display: flex;
+            width: 100%;
+            height: 22px;
+            font-size: 16px;
+            color: #999999;
+            margin: 0 41px 0 0;
+            background-color: transparent;
+            font-weight: 600;
+        }
+
+        .category span{
+            margin: 0 0 0 10px;
+        }
+
+        .category:nth-child(1) {
+            background-color: transparent;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .work-items {
+            display: flex;
+            height: 100%;
+        }
+
+        .work-item {
+            width: 100%;
+        }
+
+        .work-items img {
+            height: 100%;
+        }
+
+        .work-item-content {
+            position: absolute;
+            top: 304px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25%;
+        }
+
+        .work-item-content img {
+            width: auto;
+        }
+
+        .work-item-content > span:nth-child(2) {
+            width: 240px;
+            height: 165px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 49px 0 0 0;
+            width: 240px;
+        }
+
+        .work-item-content > span:nth-child(3) {
+            width: 156px;
+            height: 54px;
+            border-radius: 27px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #275ff8;
+            margin: 10px 0 0 0;
+        }
+
+        .pagination {
+            background-color: transparent;
+            position: absolute;
+            bottom: 9.86%;
+            right: 7.15%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pagination > span {
+            width: 36px;
+            height: 36px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 7px 0 0;
+        }
+
+        .pagination > span:nth-child(1) {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .pagination > span:nth-child(7),
+        .pagination > span:nth-child(8) {
+            width: 100px;
+            background-color: #000;
+            color: #fff;
+        }
+    }
+</style>
