@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SupermeZebra</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/font.css?{{ site.assetversion }}">
+    <link rel="stylesheet" href="/assets/css/style.css?{{ site.assetversion }}">
+    {% include contact_style.html %}
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-logo">
+                <picture>
+                    <source srcset="/assets/img/logo-w.png, /assets/img/logo-w@2x.png 2x" media="(min-width: 960px)">
+                    <img src="/assets/img/logo.png" srcset="/assets/img/logo@2x.png 2x">
+                </picture>
+            </div>
+            <div class="nav-title mobile">CONTACT</div>
+            <div class="nav-menu-icon mobile"><img src="/assets/img/icon-menu-black.png" srcset="/assets/img/icon-menu-black@2x.png 2x"></div>
+            <div class="nav-menu">
+                <a href="/"><div class="menu-item index" {% if page.route == 'index' %} style="margin-left:10px"{% endif %}>{% if page.route == 'index' %}
+                    <picture>
+                        <source srcset="/assets/img/rectangle-34.png, /assets/img/rectangle-34@2x.png 2x" media="(min-width: 960px)">
+                        <img src="/assets/img/icon-dian.png" srcset="/assets/img/icon-dian@2x.png 2x">
+                    </picture>
+                    {% endif %}<span>HOME</span></div></a>
+                <a href="/works"><div class="menu-item works"><span>WORKS</span></div></a>
+                <a href="/blogs"><div class="menu-item blogs"><span>BLOGS</span></div></a>
+                <a href="/contact"><div class="menu-item contact-menu"><span>CONTACT</span></div></a>
+                <a href="/"><div class="menu-item lang"><span>CHINESE</span></div></a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="bg">
+                <picture>
+                    <source srcset="/assets/img/d-bg.png, /assets/img/d-bg@2x.png 2x" media="(min-width: 960px)">
+                    <img src="/assets/img/banner-1.png" srcset="/assets/img/banner-1@2x.png 2x">
+                </picture>
+                <div class="contact-intro">
+                    <p class="contact-intro-title">BRAND COMMUNICATION DESIGN</p>
+                    <p class="contact-intro-content">Make feasible product plan according to market target, gain advantage in fierce market competition.</p>
+
+                    <p class="contact-intro-title">USER RESEARCH</p>
+                    <p class="contact-intro-content">Simple and clear is the most concise and intuitive way to achieve effective visual communication and communication, and reject all unrealistic symbolic meanings and so-called connotations.</p>
+
+                    <p class="contact-intro-title">UI & UE DESIGN</p>
+                    <p class="contact-intro-content">Simple and clear is the most concise and intuitive way to achieve effective visual communication and communication, and reject all unrealistic symbolic meanings and so-called connotations.</p>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact-title">Get in Touch</div>
+                <p>We use the most professional design to achieve your best ideas. Fill out the form and send it to: <span>service@zebra.com</span>. Let's go further.</p>
+                <p>Also welcome to call the enquiry hotline: <span>17600884889</span>.</p>
+                <div class="form">
+                    <div><input name="" placeholder="Name *"/></div>
+                    <div><input name="" placeholder="Phone Number *"/></div>
+                    <div><input name="" placeholder="Email Address *"/></div>
+                    <div><textarea>Cooperation Content</textarea></div>
+                    <div><button>SEND EMAIL</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-logo mobile"><img src="/assets/img/logo-footer.png" srcset="/assets/img/logo-footer@2x.png 2x"></div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <div class="social"><a href="">
+                            <img src="/assets/img/icon-dribbble.png" srcset="/assets/img/icon-dribbble@2x.png 2x">
+                    </a></div>
+                    <div class="social"><a href="">
+                            <img src="/assets/img/icon-wechat.png" srcset="/assets/img/icon-wechat@2x.png 2x">
+                    </a></div>
+                    <div class="social"><a href="">
+                            <img src="/assets/img/icon-wechat-1.png" srcset="/assets/img/icon-wechat-1@2x.png 2x">
+                    </a></div>
+                    <div class="social"><a href="">
+                            <img src="/assets/img/icon-behance.png" srcset="/assets/img/icon-behance@2x.png 2x">
+                    </a></div>
+                    <div class="social"><a href="">
+                            <img src="/assets/img/icon-inster.png" srcset="/assets/img/icon-inster@2x.png 2x">
+                    </a></div>
+                </div>
+                <div class="footer-copyright">Copyright &copy; 2017-2018 Zebra Design All Rights Reserved.</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $(".nav-menu-icon").click(function(){
+            $(".nav-menu").show();
+            $(".nav-title").hide();
+        })
+    })
+    </script>
+</body>
+</html>

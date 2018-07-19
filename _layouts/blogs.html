@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="/assets/css/font.css?{{ site.assetversion }}">
     <link rel="stylesheet" href="/assets/css/style.css?{{ site.assetversion }}">
-    {% include works_style.html %}
+    {% include blogs_style.html %}
 </head>
 <body>
     <div class="container">
@@ -35,17 +35,94 @@
                         <img src="/assets/img/icon-dian.png" srcset="/assets/img/icon-dian@2x.png 2x">
                     </picture>
                     {% endif %}<span>WORKS</span></div></a>
-                <a href="/blogs"><div class="menu-item blogs"><span>BLOGS</span></div></a>
+                <a href="/blogs"><div class="menu-item blogs" {% if page.route == 'blogs' %} style="margin-left:10px"{% endif %}>{% if page.route == 'blogs' %}
+                    <picture>
+                        <source srcset="/assets/img/rectangle-34.png, /assets/img/rectangle-34@2x.png 2x" media="(min-width: 960px)">
+                        <img src="/assets/img/icon-dian.png" srcset="/assets/img/icon-dian@2x.png 2x">
+                    </picture>
+                    {% endif %}<span>BLOGS</span></div></a>
                 <a href="/contact"><div class="menu-item contact"><span>CONTACT</span></div></a>
                 <a href="/"><div class="menu-item lang"><span>CHINESE</span></div></a>
             </div>
         </div>
-
-        <div class="blogs">
-            <div class="blog"></div>
-            <div class="blog"></div>
+        <div class="categorys desktop">
+            <div class="category"><img src="/assets/img/rectangle-34.png" srcset="/assets/img/rectangle-34@2x.png 2x" class="desktop"><span>All</span></div>
+            <div class="category">Article</div>
+            <div class="category">Translation</div>
+            <div class="category">Tutorial</div>
         </div>
+        <div class="blogs-container">
+            <div class="blog-items">
+                <a href="/blog">
+                <div class="blog-item">
+                    <div class="blog-item-img"><img src="/assets/img/banner-4.png" srcset="/assets/img/banner-4@2x.png 2x"></div>
+                    <div class="blog-item-intro">The application of white space in design. The application of white</div>
+                    <div class="blog-item-creatro">2018.01.01 by Areswen</div>
+                </div>
+                </a>
+                <a href="/blog">
+                    <div class="blog-item">
+                    <div class="blog-item-img"><img src="/assets/img/banner-4.png" srcset="/assets/img/banner-4@2x.png 2x"></div>
+                    <div class="blog-item-intro">The application of white space in design. </div>
+                    <div class="blog-item-creatro">2018.01.01 by Areswen</div>
+                </div>
+                </a>
+                <a href="/blog">
+                <div class="blog-item">
+                    <div class="blog-item-img"><img src="/assets/img/banner-4.png" srcset="/assets/img/banner-4@2x.png 2x"></div>
+                    <div class="blog-item-intro">The application of white space in design. </div>
+                    <div class="blog-item-creatro">2018.01.01 by Areswen</div>
+                </div>
+                </a>
+            </div>
+            <div class="blog-items">
+                <a href="/blog">
+                <div class="blog-item">
+                    <div class="blog-item-img"><img src="/assets/img/banner-4.png" srcset="/assets/img/banner-4@2x.png 2x"></div>
+                    <div class="blog-item-intro">The application of white space in design. </div>
+                    <div class="blog-item-creatro">2018.01.01 by Areswen</div>
+                </div>
+                </a>
+                <a href="/blog">
+                <div class="blog-item">
+                    <div class="blog-item-img"><img src="/assets/img/banner-4.png" srcset="/assets/img/banner-4@2x.png 2x"></div>
+                    <div class="blog-item-intro">The application of white space in design. </div>
+                    <div class="blog-item-creatro">2018.01.01 by Areswen</div>
+                </div>
+                </a>
+                <a href="/blog">
+                <div class="blog-item">
+                    <div class="blog-item-img"><img src="/assets/img/banner-4.png" srcset="/assets/img/banner-4@2x.png 2x"></div>
+                    <div class="blog-item-intro">The application of white space in design. The application of white</div>
+                    <div class="blog-item-creatro">2018.01.01 by Areswen</div>
+                </div>
+                </a>
+            </div>
 
+            <div class="blog-items desktop">
+                <a href="/blog">
+                <div class="blog-item">
+                    <div class="blog-item-img"><img src="/assets/img/banner-4.png" srcset="/assets/img/banner-4@2x.png 2x"></div>
+                    <div class="blog-item-intro">The application of white space in design. </div>
+                    <div class="blog-item-creatro">2018.01.01 by Areswen</div>
+                </div>
+                </a>
+                <a href="/blog">
+                <div class="blog-item">
+                    <div class="blog-item-img"><img src="/assets/img/banner-4.png" srcset="/assets/img/banner-4@2x.png 2x"></div>
+                    <div class="blog-item-intro">The application of white space in design. </div>
+                    <div class="blog-item-creatro">2018.01.01 by Areswen</div>
+                </div>
+                </a>
+                <a href="/blog">
+                <div class="blog-item">
+                    <div class="blog-item-img"><img src="/assets/img/banner-4.png" srcset="/assets/img/banner-4@2x.png 2x"></div>
+                    <div class="blog-item-intro">The application of white space in design. The application of white</div>
+                    <div class="blog-item-creatro">2018.01.01 by Areswen</div>
+                </div>
+                </a>
+            </div>
+        </div>
         {% include footer.html %}
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>

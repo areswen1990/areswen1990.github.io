@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SupermeZebra</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/font.css?{{ site.assetversion }}">
+    <link rel="stylesheet" href="/assets/css/style.css?{{ site.assetversion }}">
+    {% include blog_style.html %}
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-logo">
+                <picture>
+                    <source srcset="/assets/img/d-logo.png, /assets/img/d-logo@2x.png 2x" media="(min-width: 960px)">
+                    <img src="/assets/img/logo.png" srcset="/assets/img/logo@2x.png 2x">
+                </picture>
+            </div>
+            <div class="nav-title mobile"><span>BLOG</span></div>
+            <div class="nav-menu-icon mobile"><img src="/assets/img/icon-menu-black.png" srcset="/assets/img/icon-menu-black@2x.png 2x"></div>
+            <div class="nav-menu">
+                <a href="/"><div class="menu-item index" {% if page.route == 'index' %} style="margin-left:10px"{% endif %}>{% if page.route == 'index' %}
+                    <picture>
+                        <source srcset="/assets/img/rectangle-34.png, /assets/img/rectangle-34@2x.png 2x" media="(min-width: 960px)">
+                        <img src="/assets/img/icon-dian.png" srcset="/assets/img/icon-dian@2x.png 2x">
+                    </picture>
+                    {% endif %}<span>HOME</span></div></a>
+                <a href="/works"><div class="menu-item works" {% if page.route == 'works' %} style="margin-left:10px"{% endif %}>{% if page.route == 'works' %}
+                    <picture>
+                        <source srcset="/assets/img/rectangle-34.png, /assets/img/rectangle-34@2x.png 2x" media="(min-width: 960px)">
+                        <img src="/assets/img/icon-dian.png" srcset="/assets/img/icon-dian@2x.png 2x">
+                    </picture>
+                    {% endif %}<span>WORKS</span></div></a>
+                <a href="/blogs"><div class="menu-item blogs" {% if page.route == 'blogs' %} style="margin-left:10px"{% endif %}>{% if page.route == 'blogs' %}
+                    <picture>
+                        <source srcset="/assets/img/rectangle-34.png, /assets/img/rectangle-34@2x.png 2x" media="(min-width: 960px)">
+                        <img src="/assets/img/icon-dian.png" srcset="/assets/img/icon-dian@2x.png 2x">
+                    </picture>
+                    {% endif %}<span>BLOGS</span></div></a>
+                <a href="/contact"><div class="menu-item contact"><span>CONTACT</span></div></a>
+                <a href="/"><div class="menu-item lang"><span>CHINESE</span></div></a>
+            </div>
+        </div>
+        <div class="blog-container">
+            <div class="blog-title">The application of white space in design. The application of white</div>
+            <div class="blog-creatro">2018.01.01   By Areswen</div>
+            <div class="blog-line"></div>
+            <div class="blog-intro">Introduction</div>
+            <div class="blog-content">
+                <p>Simple and clear is the most concise and intuitive way to achieve effective visual communication andcommunication, and reject all unrealistic symbolic meanings and so-called connotations.</p>
+                <div class="blog-img"><img src="/assets/img/banner-5.png" srcset="/assets/img/banner-5@2x.png 2x"></div>
+                <p>Simple and clear is the most concise and intuitive way to achieve effective visual communication andcommunication, and reject all unrealistic symbolic meanings and so-called connotations.Simple and clear is the most concise and intuitive way to achieve effective visual communication andcommunication, and reject all unrealistic symbolic meanings and so-called connotations.</p>
+            </div>
+            <div class="blog-line line-2 mobile"></div>
+            <div class="blog-next">
+                <span>NEXT: </span>
+                <a href="">The application of white space in design. The application of white</a>
+            </div>
+        </div>
+        {% include footer.html %}
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $(".nav-menu-icon").click(function(){
+            $(".nav-menu").show();
+            $(".nav-title").hide();
+        })
+        $(".nav-title").click(function(){
+            $(".categorys").toggle();
+        })
+    })
+    </script>
+</body>
+</html>

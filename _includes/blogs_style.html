@@ -1,0 +1,128 @@
+<style>
+    .container {
+        background-color: #f7f9fa;
+    }
+    .nav {
+        z-index: auto;
+        position: static;
+        background-color: #fff;
+    }
+
+    .nav-title {
+        margin: 0 6px 0 0;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color: #232631;
+    }
+
+    .blog-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .blog-items:nth-child(1),
+    .blog-items:nth-child(2) {
+        margin: 0 7px 0 0;
+    }
+
+    .blog-items:nth-child(2) {
+        display: none;
+    }
+
+    .blog-item {
+        background-color: #ffffff;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+        margin: 0 0 7px 0;
+    }
+
+    .blogs-container {
+        display: flex;
+        margin: 10px;
+    }
+
+    .blog-item-img img {
+        display: block;
+        width: 100%;
+    }
+
+    .blog-item-intro {
+        font-size: 14px;
+        font-weight: 600;
+        color: #010101;
+        margin: 10px 0 0 10px;
+    }
+
+    .blog-item-creatro {
+        font-size: 12px;
+        color: #010101;
+        margin: 10px 0 0 10px;
+        padding: 0 0 10px 0;
+    }
+
+    @media only screen and (min-width:961px){
+        .nav {
+            z-index: auto;
+            position: static;
+            background-color: #f7f9fa;
+        }
+
+        .nav-menu span {
+            color: #999;
+        }
+
+        .blogs span {
+            color: #000;
+        }
+
+        .footer {
+            position: static;
+            margin: 108px 0 40px 0;
+        }
+
+        .footer-copyright {
+            color: #000;
+        }
+
+        .blog-items:nth-child(2) {
+            display: inline;
+        }
+
+        .container {
+            background-color: #f7f9fa;
+        }
+
+        .categorys {
+            display: flex;
+            justify-content: flex-end;
+            background-color: transparent;
+            box-shadow: none;
+            margin: 30px 14.583% 52px 0;
+        }
+
+        .category {
+            width: 100%;
+            display: flex;
+            height: 22px;
+            font-size: 16px;
+            color: #999999;
+            margin: 0 41px 0 0;
+            background-color: transparent;
+            font-weight: 600;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+        }
+
+        .category span{
+            margin: 0 0 0 10px;
+        }
+
+        .blogs-container {
+            display: flex;
+            margin: 0 14.583% 0 14.583%;
+        }
+    }
+</style>

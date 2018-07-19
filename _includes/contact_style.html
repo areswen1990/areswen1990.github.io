@@ -1,0 +1,236 @@
+<style>
+    body {
+        background-color: #f7f9fa;
+    }
+
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
+    .nav {
+        z-index: auto;
+        position: static;
+        background-color: #fff;
+    }
+
+    .nav-title {
+        margin: 0 6px 0 0;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color: #232631;
+    }
+
+    .contact {
+        margin: 20px;
+    }
+
+    .contact-title {
+        height: 33px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #010101;
+    }
+
+    .contact p {
+        font-size: 14px;
+        line-height: 1.71;
+        color: #4d4d4d;
+    }
+
+    .contact p > span {
+        color: #275ff8;
+        font-weight: 600;
+    }
+
+    .contact p:nth-child(2) {
+        margin: 15px 0 0 0;
+    }
+
+    .contact p:nth-child(3) {
+        margin: 30px 0 0 0;
+    }
+
+    .form {
+        margin: 29px 0 0 0;
+    }
+
+    .form input {
+        border-width: 0;
+        height: 48px;
+        width: 100%;
+        background-color: #f0f0f0;
+        margin: 0 0 14px 0;
+        padding: 0 0 0 12.2px;
+        font-size: 16px;
+        color: #bcc4cc;
+    }
+
+    .form input::-webkit-input-placeholder { /* WebKit browsers */
+        color: #bcc4cc;
+    }
+
+    .form textarea {
+        border-width: 0;
+        height: 120px;
+        width: 100%;
+        background-color: #f0f0f0;
+        margin: 0 0 14px 0;
+        padding: 13px 0 0 12.2px;
+        font-size: 16px;
+        color: #bcc4cc;
+    }
+
+    .form button {
+        border-width: 0;
+        height: 48px;
+        width: 100%;
+        background-color: #275ff8;
+        font-size: 16px;
+        margin: 0 0 20px 0;
+        color: #fff;
+    }
+
+    .line-parent {
+        margin: 40px 0 40px 20px;
+    }
+
+    .title-img img {
+        display: block;
+        width: 100%;
+    }
+    @media only screen and (min-width:961px){
+        .mobile {
+            display:none;
+        }
+
+        .desktop {
+            display: block;
+        }
+
+        .nav {
+            display: flex;
+            z-index: 1;
+            position: absolute;
+            background-color: transparent;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-menu {
+            margin: 85px 7.22% 0 auto
+        }
+
+        .menu-item span {
+            margin: 0;
+        }
+
+        .lang {
+            margin: 0;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .bg {
+            order: 1;
+            width: auto;
+        }
+
+        .bg img {
+            display: block;
+        }
+
+        .contact {
+            width: 41.18%;
+            margin: 160px 7.22% 0 163px;
+            order: 2;
+        }
+
+        .contact-title {
+            font-size: 48px;
+            font-weight: 600;
+            height: 67px;
+            color: #010101;
+        }
+
+        .contact p {
+            font-size: 18px;
+            line-height: 1.33;
+            color: #4d4d4d;
+        }
+
+        .form input {
+            border-width: 0;
+            height: 60px;
+            margin: 0 0 52px 0;
+        }
+
+        .form textarea {
+            height: 200px;
+        }
+
+        .form button {
+            height: 60px;
+        }
+
+        .nav-menu span {
+            color: #999;
+        }
+
+        .footer-copyright {
+            color: #000;
+        }
+
+        .contact-intro {
+            width: 21.8%;
+            position: absolute;
+            color: #fff;
+            top: 241px;
+            left: 7.22%;
+        }
+
+        .contact-intro-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .contact-intro-content {
+            font-size: 12px;
+            font-weight: 300;
+            color: #ffffff;
+        }
+
+        .contact-intro p:nth-child(1) {
+            height: 66px;
+            margin: 0 0 20px 0;
+        }
+        .contact-intro p:nth-child(2) {
+            height: 56px;
+            margin: 0 0 59px 0;
+        }
+        .contact-intro p:nth-child(3) {
+            height: 33px;
+            margin: 0 0 20px 0;
+        }
+        .contact-intro p:nth-child(4) {
+            height: 114px;
+            margin: 0 0 36px 0;
+        }
+        .contact-intro p:nth-child(5) {
+            height: 33px;
+            margin: 0 0 20px 0;
+        }
+        .contact-intro p:nth-child(6) {
+            height: 114px;
+        }
+    }
+</style>
